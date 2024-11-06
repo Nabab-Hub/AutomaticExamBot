@@ -31,7 +31,7 @@ export default function Pricing() {
 
   useEffect(() => {
     getAllUserAPIs()
-  }, [getAllUserAPIs])
+  }, [])
 
   const generateAPIKey = () => {
     if(isLoggedIn){
