@@ -14,7 +14,7 @@ const connectDb = require('./utlis/db')
 const errorMiddleware = require('./middlewares/error-middleware')
 
 // let's tackle cors
-const REQ_URL = 'https://api-automatic-exam-bot.vercel.app'
+const REQ_URL = 'https://automatic-exam-bot.vercel.app'
 // const REQ_URL = 'https://e7da-2409-40e1-1d-e085-5d44-bc22-a559-944c.ngrok-free.app'
 const corsOption = {
     origin: REQ_URL,
