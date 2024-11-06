@@ -27,7 +27,12 @@ export default function Download() {
   }, [])
 
   const downloadApp = () => {
-    window.location.href = "https://drive.google.com/uc?export=download&id=1eQe_zRfBjuG9JYhOHB4h7-u1IFYwt3qf";
+    const download_url = "https://drive.google.com/uc?export=download&id=1eQe_zRfBjuG9JYhOHB4h7-u1IFYwt3qf";
+    const link = document.createElement('a');
+    link.href = download_url;
+    link.target = '_blank';
+    link.download = '';  // This tells the browser to download the file, not navigate to it
+    link.click();  //
   }
 
   return (
