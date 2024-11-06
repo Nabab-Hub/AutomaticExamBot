@@ -26,6 +26,10 @@ export default function Download() {
     getAppVersion()
   }, [])
 
+  const downloadApp = () => {
+    window.location.href = "https://drive.google.com/uc?export=download&id=1eQe_zRfBjuG9JYhOHB4h7-u1IFYwt3qf";
+  }
+
   return (
     <>
       <div className="download_outer">
@@ -38,7 +42,7 @@ export default function Download() {
           <h4>Download AutomaticExambot {application.version} Now</h4>
           <p>Get started with the most powerful online MCQ automation tool today. Click the button below to download the latest version and transform your exam administration process.</p>
           <div className="download_button">
-            <button className="download_btn">Download Now</button>
+            <button className="download_btn" onClick={downloadApp}>Download Now</button>
           </div>
         </div>
 
@@ -76,7 +80,7 @@ export default function Download() {
           <h4>Download AutomaticExambot {application.version} Now</h4>
           <p>Get started with the most powerful online MCQ automation tool today. Click the button below to download the latest version and transform your exam administration process.</p>
           <div className="download_button">
-            <button className="download_btn">Download Now</button>
+            <button className="download_btn" onClick={downloadApp}>Download Now</button>
           </div>
         </div>
       </div>
