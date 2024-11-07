@@ -32,7 +32,7 @@ export default function Demos() {
             <div className="demo_outer" key={index}>
               <div className="demo_inner">
               <h2>{vid.title}</h2>
-                <iframe width="640" height="360" frameborder="0" src={vid.link} allowfullscreen ></iframe>
+                <iframe frameborder="0" src={vid.link} allowfullscreen ></iframe>
                 <p>{vid.description}hi</p>
               </div>
             </div>
