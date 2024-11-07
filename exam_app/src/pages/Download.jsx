@@ -27,7 +27,11 @@ export default function Download() {
   }, [])
 
   const downloadApp = () => {
-    window.location.href = 'https://mega.nz/file/zJNm2ZKI#a0bVaR0Msm7jSQUqzmXwODK68_OhRRuyyt_j5z8pHwQ'
+    window.location.href = 'https://mega.nz/file/jAVlgDyD#cj9paf6DmL7W5cv0Sz47Vr9g6MEZc4mIk_EUtI7D-8Q'
+  }
+
+  const downloadWebsite = () => {
+    window.location.href = 'https://mega.nz/file/GYEwBIBD#RgLdz__woAIggr9g3l9w_MW-VKF8QPPgCgz694eVXRI'
   }
 
   return (
@@ -43,6 +47,14 @@ export default function Download() {
           <p>Get started with the most powerful online MCQ automation tool today. Click the button below to download the latest version and transform your exam administration process.</p>
           <div className="download_button">
             <button className="download_btn" onClick={downloadApp}>Download Now</button>
+          </div>
+        </div>
+
+        <div className="test_website contain">
+          <h4>Test the Tpplication</h4>
+          <p>You can test this application in our fake makaut examination website download the fake website from bellow button.</p>
+          <div className='test_dwn_btn'>
+            <button className="download_btn" onClick={downloadWebsite}>Download</button>
           </div>
         </div>
 
