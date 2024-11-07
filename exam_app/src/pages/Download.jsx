@@ -53,7 +53,7 @@ export default function Download() {
         <div className="test_website contain">
           <h4>Test the Tpplication</h4>
           <p>You can test this application in our fake makaut examination website download the fake website from bellow button.</p>
-          <div className='test_dwn_btn'>
+          <div className="test_dwn_btn download_button">
             <button className="download_btn" onClick={downloadWebsite}>Download</button>
           </div>
         </div>
