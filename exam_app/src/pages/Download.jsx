@@ -27,12 +27,7 @@ export default function Download() {
   }, [])
 
   const downloadApp = () => {
-    const download_url = "https://drive.google.com/uc?export=download&id=1eQe_zRfBjuG9JYhOHB4h7-u1IFYwt3qf";
-    const link = document.createElement('a');
-    link.href = download_url;
-    link.target = '_blank';
-    link.download = '';  // This tells the browser to download the file, not navigate to it
-    link.click();  //
+    window.location.href = 'https://mega.nz/file/zJNm2ZKI#a0bVaR0Msm7jSQUqzmXwODK68_OhRRuyyt_j5z8pHwQ'
   }
 
   return (
