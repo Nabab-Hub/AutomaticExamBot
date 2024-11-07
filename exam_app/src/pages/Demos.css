@@ -38,7 +38,7 @@
     color: rgb(253, 255, 254);
     text-shadow: 0 0 15px #1313c1;
 }
-.demo_outer .demo_inner video{
+.demo_outer .demo_inner iframe {
     width: 95%;
 }
 .demo_outer .demo_inner p{
