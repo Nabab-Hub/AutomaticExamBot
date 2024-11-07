@@ -31,7 +31,7 @@ export default function Download() {
   }
 
   const downloadWebsite = () => {
-    window.location.href = 'https://mega.nz/file/GYEwBIBD#RgLdz__woAIggr9g3l9w_MW-VKF8QPPgCgz694eVXRI'
+    window.location.href = 'https://mega.nz/file/bM9yQYYJ#WfczDSDqLtnHPDBW0eR3MNOW7i2korgrO6o2JKfJ_uE'
   }
 
   return (
