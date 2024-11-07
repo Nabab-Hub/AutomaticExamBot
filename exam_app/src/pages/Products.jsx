@@ -43,7 +43,7 @@ export default function Products() {
           <p><b>Q:</b> What are the system requirements for AutomaticExambot?<br />
           <b>A:</b> AutomaticExambot requires Windows 10 or higher, 4GB RAM, and 100MB free disk space..</p>
           <p><b>Q:</b> How do I get customer support?<br />
-          <b>A:</b> You can reach out to our support team 24/7 via email at support@automaticexambot.com.</p>
+          <b>A:</b> You can reach out to our support team 24/7 via email at automaticexambot@gmail.com.</p>
         </div>
 
     </div>
