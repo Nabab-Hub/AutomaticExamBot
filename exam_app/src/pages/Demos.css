@@ -40,6 +40,9 @@
 }
 .demo_outer .demo_inner iframe {
     width: 95%;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
 }
 .demo_outer .demo_inner p{
     width: 95%;
