@@ -28,16 +28,20 @@ import AdminReply from './pages/AdminReply';
 import GenerateAPIForm from './bars/GenerateAPIForm';
 import Products from './pages/Products';
 import { useEffect } from 'react';
+import MakePayment from './pages/MakePayment';
+import ThankYou from './pages/ThankYou';
+import AdminCoinRequests from './pages/AdminCoinRequests';
+import AdminCoinsUpdate from './pages/AdminCoinsUpdate';
 
 function App() {
   const { isLoggedIn, user } = useAuth()
 
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://checkout.razorpay.com/v1/checkout.js";
-    script.async = true;
-    document.body.appendChild(script);
-}, []);
+//   useEffect(() => {
+//     const script = document.createElement("script");
+//     script.src = "https://checkout.razorpay.com/v1/checkout.js";
+//     script.async = true;
+//     document.body.appendChild(script);
+// }, []);
 
   return (
     
@@ -64,6 +68,8 @@ function App() {
             <Route path='/profile' element={<Profile/>}/>
             <Route path='/change_password' element={<ChangePassword/>}/>
             <Route path='/buy_coins' element={<BuyCoins/>}/>
+            <Route path='/make_payment' element={<MakePayment/>}/>
+            <Route path='/thank_you' element={<ThankYou/>}/>
           </>
           :<>
               <Route path='/login' element={<Login/>}/>
@@ -71,12 +77,14 @@ function App() {
           </>}
           <Route path='/*' element={<ErrorPage/>}/>
 
-          {/* Admin Route  */}
-          {user.isAdmin ? <Route path='/admin' element={<AdminLayout/>}>
+          {/* Admin Route user.isAdmin */}
+          {true ? <Route path='/admin' element={<AdminLayout/>}>
             <Route path='users' element={<AdminUsers/>}/>
             <Route path='contacts' element={<AdminContacts/>}/>
+            <Route path='coins_request' element={<AdminCoinRequests/>}/>
             <Route path='users/:id/edit' element={<AdminUpdate/>}/>
             <Route path='contacts/:email/reply' element={<AdminReply/>}/>
+            <Route path='coins_request/:email/edit' element={<AdminCoinsUpdate/>}/>
           </Route> : ''}
         </Routes>
         <Footer/>
