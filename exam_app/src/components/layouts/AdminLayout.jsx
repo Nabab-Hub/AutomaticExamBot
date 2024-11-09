@@ -11,6 +11,7 @@ export default function AdminLayout() {
                     <ul>
                         <li><NavLink to='/admin/users'>Users</NavLink></li>
                         <li><NavLink to='/admin/contacts'>Contacts</NavLink></li>
+                        <li><NavLink to='/admin/coins_request'>Requests</NavLink></li>
                         <li><NavLink to='/products'>Products</NavLink></li>
                         <li><NavLink to='/'>Home</NavLink></li>
                     </ul>
