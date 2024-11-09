@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.payment_outer{
+    min-height: 100vh;
+    background: radial-gradient(#0b0b42, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.payment_outer .payment_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    h2{
+        color: white;
+    }
+    .gpay_img{
+        height: 30rem;
+        img{
+            /* width: 100px; */
+            height: 100%;
+        }
+    }
+}
+
+.payment_outer .screentshot_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* position: relative; */
+    h2{
+        color: white;
+    }
+    .upload_ss{
+        height: 30rem;
+        width: 80%;
+        position: relative;
+        /* border: 2px solid red; */
+        img{
+            /* width: 100px; */
+            height: 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        input{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 3;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+        }
+    }
+}
+
+.payment_outer .submit_ss{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    .note{
+        h3{
+            color: rgb(162, 1, 1);
+        }
+        p{
+            color: red;
+            text-align: justify;
+        }
+    }
+    button{
+        width: 30%;
+        height: 3rem;
+        background-color: transparent;
+        outline: none;
+        /* border: 1px solid red; */
+        border-radius: 0.5rem;
+        border: 0.3px solid #BDBDBD;
+        cursor: pointer;
+        font-weight: 600;
+        color: #e8e9ee;
+        padding: 0.2rem;
+    }
+    button:hover{
+        background-color: rgb(52, 4, 56);
+        /* border-radius: 0px; */
+    }
+}
+
+.payment_loading{
+    display: none;
+}
+
+.blur_background{
+    filter: blur(5px);
+}
