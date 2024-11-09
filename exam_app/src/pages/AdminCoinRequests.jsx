@@ -43,7 +43,7 @@ export default function AdminCoinRequests() {
                 }
             })
             if(response.ok){
-                toast.success('Contact Deleted Successfuly')
+                toast.success('Requests Deleted Successfuly')
                 getAllRequests()
             }else{
                 const res_data = await response.json()
