@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.thankyou{
+.thankyou {
     min-height: 100vh;
     background: radial-gradient(#0b0b42, black);
     display: flex;
@@ -12,23 +12,61 @@
     align-items: center;
     flex-direction: column;
     gap: 1.5rem;
+    padding: 1rem;
 }
 
-.thankyou .thank_inner{
+.thankyou .thank_inner {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 0.5rem;
-    h1{
-        font-size: 5rem;
-        color: white;
+    text-align: center;
+}
+
+.thankyou .thank_inner h1 {
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.thankyou .thank_inner p {
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.thankyou .thank_inner strong {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .thankyou .thank_inner h1 {
+        font-size: 3rem;
     }
-    p{
-        color: white;
+
+    .thankyou .thank_inner p,
+    .thankyou .thank_inner strong {
+        font-size: 1rem;
     }
-    strong{
-        color: white;
-        font-size: larger;
+}
+
+@media (max-width: 480px) {
+    .thankyou .thank_inner h1 {
+        font-size: 2.5rem;
+    }
+
+    .thankyou .thank_inner p,
+    .thankyou .thank_inner strong {
+        font-size: 0.9rem;
+    }
+
+    .thankyou {
+        gap: 1rem;
     }
 }
