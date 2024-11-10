@@ -73,7 +73,7 @@ export default function AdminCoinRequests() {
                     <p><b>coin:</b> {request.coins}</p>
                     <p><b>price:</b> {request.price}</p>
                   </div>
-                  <p>{request.email}</p>
+                  <p>{request.time}<br></br>{request.email}</p>
                   <div className="buttons">
                     <Link to={`/admin/coins_request/${request.email}/edit`}>Update</Link>
                     <button onClick={() => deleteRequestById(request._id)}>Delete</button>
