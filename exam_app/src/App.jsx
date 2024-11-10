@@ -78,7 +78,7 @@ function App() {
           <Route path='/*' element={<ErrorPage/>}/>
 
           {/* Admin Route user.isAdmin */}
-          {true ? <Route path='/admin' element={<AdminLayout/>}>
+          {user.isAdmin ? <Route path='/admin' element={<AdminLayout/>}>
             <Route path='users' element={<AdminUsers/>}/>
             <Route path='contacts' element={<AdminContacts/>}/>
             <Route path='coins_request' element={<AdminCoinRequests/>}/>
