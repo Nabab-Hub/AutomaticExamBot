@@ -94,7 +94,7 @@ export default function OtpValidation() {
         <div className="otp_outer">
             <div className="otp_inner">
                 <h2 className="otp_title">OTP Verification</h2>
-                    <p>OTP sent to your email address</p>
+                    <p>OTP sent to your email address {userDetails.email}</p>
                 <div className="otp_input">
                     <form action="#" onSubmit={handleOtpSubmit}>
                         <label htmlFor="otp_input_box">Enter OTP:</label>
