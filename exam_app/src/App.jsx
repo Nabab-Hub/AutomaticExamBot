@@ -27,7 +27,7 @@ import AdminUpdate from './pages/AdminUpdate';
 import AdminReply from './pages/AdminReply';
 import GenerateAPIForm from './bars/GenerateAPIForm';
 import Products from './pages/Products';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import MakePayment from './pages/MakePayment';
 import ThankYou from './pages/ThankYou';
 import AdminCoinRequests from './pages/AdminCoinRequests';
