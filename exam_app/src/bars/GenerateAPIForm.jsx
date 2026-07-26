@@ -43,7 +43,7 @@ const StepForm = () => {
 
   useEffect(() => {
     getAllPlans()
-  }, [])
+  }, [getAllPlans])
 
   const handleNext = async () => {
     if(selectedPlan.speed && steps.length - 1 !== activeStep){
